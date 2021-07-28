@@ -32,7 +32,7 @@ public class StudentController {
 		Student student = studentService.FindById(studId);
 		return new ResponseEntity<Student>(student, HttpStatus.OK);
 	}
-	public ResponseEntity<String> deleteStudent(@PathVariable("studId")int studId){
+	public ResponseEntity<Integer> deleteStudent(@PathVariable("studId")int studId){
 		
 		return null;
 	}
